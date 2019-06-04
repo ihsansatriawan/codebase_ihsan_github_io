@@ -1,0 +1,85 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+[author]
+  name = "Ihsan Satriawan"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Homepage and blog by Djordje Atlialp"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  homeSubtitle = "Simple Software Engineer"
+
+  [params.logo]
+    logoText     = "Ihsan"
+    logoHomeLink = "/"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/Ihsansatriawan"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:ihsan.satriawan.20@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/ihsansatriawan"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/ihsansatriawan"
+
+[languages]
+  [languages.en]
+    title = "Ihsan Satriawan"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    # [languages.en.params.logo]
+    #   logoText = "Ihsan"
+    #   logoHomeLink = "/"
+    # or
+    #
+    # path = "/resources/_gen/images/ihsan.png"
+    # alt = "Your example logo alt text"
+
+	# You can create a language based menu
+    [languages.en.menu]
+      # [[languages.en.menu.main]]
+      #   identifier = "about"
+      #   name = "About"
+      #   url = "/about"
+      # [[languages.en.menu.main]]
+      #   identifier = "showcase"
+      #   name = "Showcase"
+      #   url = "/showcase"
+
+# And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
